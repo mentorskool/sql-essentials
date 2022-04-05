@@ -20,6 +20,12 @@ insert into amit_customers values ('NG-18355','New Delhi','Delhi','Consumer',973
 
 select * from amit_customers
 
+select customer_id,
+customer_city,
+customer_state,
+len(customer_state) as length_of_state
+from amit_customers
+
 select left('DK-13375',2)
 
 select customer_id,left(customer_id,2)
